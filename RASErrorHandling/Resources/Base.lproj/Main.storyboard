@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RASErrorHandling" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lvu-Ak-WgJ">
+                                <rect key="frame" x="16" y="28" width="343" height="619"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yUq-qj-vHU">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36.5"/>
+                                        <state key="normal" title="Get user profile"/>
+                                        <connections>
+                                            <action selector="didTapUserProfileWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAF-Ei-j5z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDW-nl-wvq">
+                                        <rect key="frame" x="0.0" y="36.5" width="343" height="36"/>
+                                        <state key="normal" title="Register user"/>
+                                        <connections>
+                                            <action selector="didTapRegisterUserWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3OU-Mj-l0D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eS-cK-vvG">
+                                        <rect key="frame" x="0.0" y="72.5" width="343" height="37"/>
+                                        <state key="normal" title="Update user profile"/>
+                                        <connections>
+                                            <action selector="didTapUpdateUserProfileWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r52-eH-HB8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC4-FV-ekw">
+                                        <rect key="frame" x="0.0" y="109.5" width="343" height="36.5"/>
+                                        <state key="normal" title="Internal server error"/>
+                                        <connections>
+                                            <action selector="didTapInternalServerErrorWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sHV-5G-sY7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2L-xf-PpS">
+                                        <rect key="frame" x="0.0" y="146" width="343" height="36.5"/>
+                                        <state key="normal" title="Bad Response"/>
+                                        <connections>
+                                            <action selector="didTapBadResponseWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Wy-io-i3h"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF7-uk-9oW">
+                                        <rect key="frame" x="0.0" y="182.5" width="343" height="36.5"/>
+                                        <state key="normal" title="Other Error"/>
+                                        <connections>
+                                            <action selector="didTapOtherErrorWithButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kMN-7f-sd5"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-C4-BXJ">
+                                        <rect key="frame" x="0.0" y="219" width="343" height="400"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jTE-Rc-htB">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="400"/>
+                                                <subviews>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="error" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="b9X-2q-G5D">
+                                                        <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="50" id="Hqg-eJ-4du"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="request" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gcp-r9-VQ2">
+                                                        <rect key="frame" x="0.0" y="50" width="343" height="50"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="response" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bgg-2N-u93">
+                                                        <rect key="frame" x="0.0" y="100" width="343" height="300"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="fontDescription" name="CourierNewPSMT" family="Courier New" pointSize="13"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    </textView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="b9X-2q-G5D" firstAttribute="height" secondItem="gcp-r9-VQ2" secondAttribute="height" id="gIe-ei-AUe"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="B7U-rW-zaX"/>
+                                            <constraint firstAttribute="trailing" secondItem="jTE-Rc-htB" secondAttribute="trailing" id="VI7-of-tUC"/>
+                                            <constraint firstItem="jTE-Rc-htB" firstAttribute="top" secondItem="dXY-C4-BXJ" secondAttribute="top" id="cCc-NU-tCh"/>
+                                            <constraint firstAttribute="bottom" secondItem="jTE-Rc-htB" secondAttribute="bottom" id="u0a-OC-aia"/>
+                                            <constraint firstItem="jTE-Rc-htB" firstAttribute="leading" secondItem="dXY-C4-BXJ" secondAttribute="leading" id="zdZ-ld-6GW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZC4-FV-ekw" firstAttribute="height" secondItem="5eS-cK-vvG" secondAttribute="height" id="9yg-nf-VkO"/>
+                                    <constraint firstItem="L2L-xf-PpS" firstAttribute="height" secondItem="ZC4-FV-ekw" secondAttribute="height" id="S7M-R8-uqq"/>
+                                    <constraint firstItem="5eS-cK-vvG" firstAttribute="height" secondItem="yUq-qj-vHU" secondAttribute="height" id="bRG-KV-5EH"/>
+                                    <constraint firstItem="CDW-nl-wvq" firstAttribute="height" secondItem="yUq-qj-vHU" secondAttribute="height" id="pRT-UE-Tg8"/>
+                                    <constraint firstItem="CF7-uk-9oW" firstAttribute="height" secondItem="L2L-xf-PpS" secondAttribute="height" id="t7p-r5-Iwx"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lvu-Ak-WgJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="C2a-vI-tYS"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lvu-Ak-WgJ" secondAttribute="bottom" constant="20" id="PIZ-Ja-MhP"/>
+                            <constraint firstItem="lvu-Ak-WgJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="dfC-cH-yhD"/>
+                            <constraint firstAttribute="trailing" secondItem="lvu-Ak-WgJ" secondAttribute="trailing" constant="16" id="ebJ-gv-UYC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorTextView" destination="b9X-2q-G5D" id="64f-9h-44M"/>
+                        <outlet property="internalServerErrorButton" destination="ZC4-FV-ekw" id="hnv-pv-0Ds"/>
+                        <outlet property="registerUserButton" destination="CDW-nl-wvq" id="qwG-Cg-Qgc"/>
+                        <outlet property="requestTextView" destination="gcp-r9-VQ2" id="qyo-e0-ruU"/>
+                        <outlet property="responseTextView" destination="bgg-2N-u93" id="jM7-pI-zPn"/>
+                        <outlet property="updateUserProfileButton" destination="5eS-cK-vvG" id="97c-Ux-faM"/>
+                        <outlet property="userProfileButton" destination="yUq-qj-vHU" id="Abh-ep-KDt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
