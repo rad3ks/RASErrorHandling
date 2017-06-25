@@ -20,7 +20,8 @@
 		BFBD30511F0011B400953CF0 /* JSONFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD30451F0011B400953CF0 /* JSONFormat.swift */; };
 		BFBD30521F0011B400953CF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD30461F0011B400953CF0 /* ViewController.swift */; };
 		BFBD30541F0011C000953CF0 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBD30531F0011C000953CF0 /* URLRequest.swift */; };
-		BFBD30551F00275700953CF0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFBD303C1F0011B400953CF0 /* Info.plist */; };
+		BFBD30561F005DD800953CF0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BFBD303C1F0011B400953CF0 /* Info.plist */; };
+		BFBD30581F005E6700953CF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFBD30571F005E6700953CF0 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -186,7 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBD30551F00275700953CF0 /* Info.plist in Resources */,
+				BFBD30561F005DD800953CF0 /* Info.plist in Resources */,
 				BFBD30491F0011B400953CF0 /* Main.storyboard in Resources */,
 				BFBD30471F0011B400953CF0 /* Assets.xcassets in Resources */,
 				BFBD30581F005E6700953CF0 /* Default-568h@2x.png in Resources */,
@@ -357,7 +358,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/RASErrorHandling/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rszeja.RASErrorHandling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +374,6 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/RASErrorHandling/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rszeja.RASErrorHandling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
