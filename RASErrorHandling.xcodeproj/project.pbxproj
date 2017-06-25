@@ -39,6 +39,7 @@
 		BFBD30451F0011B400953CF0 /* JSONFormat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFormat.swift; sourceTree = "<group>"; };
 		BFBD30461F0011B400953CF0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BFBD30531F0011C000953CF0 /* URLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
+		BFBD30571F005E6700953CF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		BF78ED551EF8F56A00F48FFA = {
 			isa = PBXGroup;
 			children = (
+				BFBD30571F005E6700953CF0 /* Default-568h@2x.png */,
 				BF78ED601EF8F56A00F48FFA /* RASErrorHandling */,
 				BF78ED5F1EF8F56A00F48FFA /* Products */,
 				BFBD30251EFFCFEA00953CF0 /* Frameworks */,
@@ -187,6 +189,7 @@
 				BFBD30551F00275700953CF0 /* Info.plist in Resources */,
 				BFBD30491F0011B400953CF0 /* Main.storyboard in Resources */,
 				BFBD30471F0011B400953CF0 /* Assets.xcassets in Resources */,
+				BFBD30581F005E6700953CF0 /* Default-568h@2x.png in Resources */,
 				BFBD30481F0011B400953CF0 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
